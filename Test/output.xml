@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.1 on win32)" generated="20240820 17:32:02.130" rpa="false" schemaversion="4">
+<suite id="s1" name="Calculator" source="C:\Users\Admin\Downloads\Calculator\new-cal\Test\calculator.robot">
+<test id="s1-t1" name="Verify check result -plus" line="69">
+<kw name="Open WebLocalhost" type="SETUP">
+<tag>open web browser</tag>
+<doc>ทำการเปิดเว็บlocalhost</doc>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240820 17:32:02.616" level="INFO">Opening browser 'chrome' to base url 'http://localhost:5173/'.</msg>
+<status status="PASS" starttime="20240820 17:32:02.616" endtime="20240820 17:32:07.366"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240820 17:32:07.366" endtime="20240820 17:32:07.432"/>
+</kw>
+<status status="PASS" starttime="20240820 17:32:02.615" endtime="20240820 17:32:07.432"/>
+</kw>
+<kw name="Open WebLocalhost">
+<tag>open web browser</tag>
+<doc>ทำการเปิดเว็บlocalhost</doc>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240820 17:32:07.436" level="INFO">Opening browser 'chrome' to base url 'http://localhost:5173/'.</msg>
+<status status="PASS" starttime="20240820 17:32:07.434" endtime="20240820 17:32:11.173"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240820 17:32:11.173" endtime="20240820 17:32:11.380"/>
+</kw>
+<status status="PASS" starttime="20240820 17:32:07.433" endtime="20240820 17:32:11.380"/>
+</kw>
+<kw name="Click number for calculate-plus">
+<doc>ใช้สำหรับการบวก</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_4}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240820 17:32:11.386" level="INFO">Clicking element 'id=button-4'.</msg>
+<status status="PASS" starttime="20240820 17:32:11.383" endtime="20240820 17:32:11.709"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_plus}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240820 17:32:11.710" level="INFO">Clicking element 'id=button-+'.</msg>
+<status status="PASS" starttime="20240820 17:32:11.709" endtime="20240820 17:32:11.836"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_2}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240820 17:32:11.837" level="INFO">Clicking element 'id=button-2'.</msg>
+<status status="PASS" starttime="20240820 17:32:11.836" endtime="20240820 17:32:11.947"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_equal}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240820 17:32:11.949" level="INFO">Clicking element 'id=button-='.</msg>
+<status status="PASS" starttime="20240820 17:32:11.947" endtime="20240820 17:32:12.061"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${ans}</var>
+<arg>${locator_result}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20240820 17:32:12.133" level="INFO">${ans} = 6</msg>
+<status status="PASS" starttime="20240820 17:32:12.061" endtime="20240820 17:32:12.133"/>
+</kw>
+<kw name="Should Be Equal As Integers" library="BuiltIn">
+<arg>6</arg>
+<arg>${ans}</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="PASS" starttime="20240820 17:32:12.133" endtime="20240820 17:32:12.134"/>
+</kw>
+<status status="PASS" starttime="20240820 17:32:11.382" endtime="20240820 17:32:12.134"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20240820 17:32:12.135" endtime="20240820 17:32:14.774"/>
+</kw>
+<status status="PASS" starttime="20240820 17:32:02.608" endtime="20240820 17:32:14.775"/>
+</test>
+<test id="s1-t2" name="Verify check result -minus" line="72">
+<kw name="Open WebLocalhost" type="SETUP">
+<tag>open web browser</tag>
+<doc>ทำการเปิดเว็บlocalhost</doc>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240820 17:32:14.779" level="INFO">Opening browser 'chrome' to base url 'http://localhost:5173/'.</msg>
+<status status="PASS" starttime="20240820 17:32:14.778" endtime="20240820 17:32:18.857"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240820 17:32:18.858" endtime="20240820 17:32:18.998"/>
+</kw>
+<status status="PASS" starttime="20240820 17:32:14.777" endtime="20240820 17:32:18.998"/>
+</kw>
+<kw name="Click number for calculate-minus">
+<doc>ใช้สำหรับการลบ</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_4}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240820 17:32:19.000" level="INFO">Clicking element 'id=button-4'.</msg>
+<status status="PASS" starttime="20240820 17:32:18.999" endtime="20240820 17:32:19.198"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_minus}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240820 17:32:19.200" level="INFO">Clicking element 'id=button--'.</msg>
+<status status="PASS" starttime="20240820 17:32:19.199" endtime="20240820 17:32:19.323"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_2}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240820 17:32:19.324" level="INFO">Clicking element 'id=button-2'.</msg>
+<status status="PASS" starttime="20240820 17:32:19.323" endtime="20240820 17:32:19.461"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_equal}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240820 17:32:19.463" level="INFO">Clicking element 'id=button-='.</msg>
+<status status="PASS" starttime="20240820 17:32:19.461" endtime="20240820 17:32:19.603"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${ans}</var>
+<arg>${locator_result}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20240820 17:32:19.689" level="INFO">${ans} = 2</msg>
+<status status="PASS" starttime="20240820 17:32:19.603" endtime="20240820 17:32:19.689"/>
+</kw>
+<kw name="Should Be Equal As Integers" library="BuiltIn">
+<arg>2</arg>
+<arg>${ans}</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="PASS" starttime="20240820 17:32:19.689" endtime="20240820 17:32:19.690"/>
+</kw>
+<status status="PASS" starttime="20240820 17:32:18.999" endtime="20240820 17:32:19.690"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20240820 17:32:19.691" endtime="20240820 17:32:22.497"/>
+</kw>
+<status status="PASS" starttime="20240820 17:32:14.776" endtime="20240820 17:32:22.498"/>
+</test>
+<test id="s1-t3" name="Verify check result -multi" line="74">
+<kw name="Open WebLocalhost" type="SETUP">
+<tag>open web browser</tag>
+<doc>ทำการเปิดเว็บlocalhost</doc>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240820 17:32:22.502" level="INFO">Opening browser 'chrome' to base url 'http://localhost:5173/'.</msg>
+<status status="PASS" starttime="20240820 17:32:22.501" endtime="20240820 17:32:28.566"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240820 17:32:28.566" endtime="20240820 17:32:28.944"/>
+</kw>
+<status status="PASS" starttime="20240820 17:32:22.501" endtime="20240820 17:32:28.944"/>
+</kw>
+<kw name="Click number for calculate-multi">
+<doc>ใช้สำหรับการคูณ</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_4}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240820 17:32:28.947" level="INFO">Clicking element 'id=button-4'.</msg>
+<status status="PASS" starttime="20240820 17:32:28.946" endtime="20240820 17:32:29.487"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_multi}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240820 17:32:29.489" level="INFO">Clicking element 'id=button-*'.</msg>
+<status status="PASS" starttime="20240820 17:32:29.487" endtime="20240820 17:32:29.876"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_2}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240820 17:32:29.878" level="INFO">Clicking element 'id=button-2'.</msg>
+<status status="PASS" starttime="20240820 17:32:29.877" endtime="20240820 17:32:30.082"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_equal}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240820 17:32:30.083" level="INFO">Clicking element 'id=button-='.</msg>
+<status status="PASS" starttime="20240820 17:32:30.082" endtime="20240820 17:32:30.350"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${ans}</var>
+<arg>${locator_result}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20240820 17:32:30.477" level="INFO">${ans} = 8</msg>
+<status status="PASS" starttime="20240820 17:32:30.350" endtime="20240820 17:32:30.477"/>
+</kw>
+<kw name="Should Be Equal As Integers" library="BuiltIn">
+<arg>8</arg>
+<arg>${ans}</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="PASS" starttime="20240820 17:32:30.478" endtime="20240820 17:32:30.478"/>
+</kw>
+<status status="PASS" starttime="20240820 17:32:28.945" endtime="20240820 17:32:30.478"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20240820 17:32:30.480" endtime="20240820 17:32:34.455"/>
+</kw>
+<status status="PASS" starttime="20240820 17:32:22.500" endtime="20240820 17:32:34.456"/>
+</test>
+<test id="s1-t4" name="Verify check result -divi" line="76">
+<kw name="Open WebLocalhost" type="SETUP">
+<tag>open web browser</tag>
+<doc>ทำการเปิดเว็บlocalhost</doc>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240820 17:32:34.460" level="INFO">Opening browser 'chrome' to base url 'http://localhost:5173/'.</msg>
+<status status="PASS" starttime="20240820 17:32:34.459" endtime="20240820 17:32:40.087"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240820 17:32:40.088" endtime="20240820 17:32:40.278"/>
+</kw>
+<status status="PASS" starttime="20240820 17:32:34.459" endtime="20240820 17:32:40.278"/>
+</kw>
+<kw name="Click number for calculate-divi">
+<doc>ใช้สำหรับการหาร</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_4}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240820 17:32:40.280" level="INFO">Clicking element 'id=button-4'.</msg>
+<status status="PASS" starttime="20240820 17:32:40.279" endtime="20240820 17:32:40.668"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_divide}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240820 17:32:40.669" level="INFO">Clicking element 'id=button-/'.</msg>
+<status status="PASS" starttime="20240820 17:32:40.668" endtime="20240820 17:32:40.837"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_2}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240820 17:32:40.838" level="INFO">Clicking element 'id=button-2'.</msg>
+<status status="PASS" starttime="20240820 17:32:40.837" endtime="20240820 17:32:40.943"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_equal}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240820 17:32:40.945" level="INFO">Clicking element 'id=button-='.</msg>
+<status status="PASS" starttime="20240820 17:32:40.943" endtime="20240820 17:32:41.053"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${ans}</var>
+<arg>${locator_result}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20240820 17:32:41.124" level="INFO">${ans} = 2</msg>
+<status status="PASS" starttime="20240820 17:32:41.053" endtime="20240820 17:32:41.124"/>
+</kw>
+<kw name="Should Be Equal As Integers" library="BuiltIn">
+<arg>2</arg>
+<arg>${ans}</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="PASS" starttime="20240820 17:32:41.124" endtime="20240820 17:32:41.125"/>
+</kw>
+<status status="PASS" starttime="20240820 17:32:40.279" endtime="20240820 17:32:41.125"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20240820 17:32:41.126" endtime="20240820 17:32:43.577"/>
+</kw>
+<status status="PASS" starttime="20240820 17:32:34.458" endtime="20240820 17:32:43.578"/>
+</test>
+<status status="PASS" starttime="20240820 17:32:02.134" endtime="20240820 17:32:43.580"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="4" fail="0" skip="0" id="s1" name="Calculator">Calculator</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
